@@ -1,4 +1,5 @@
 <template>
+  <!-- v-app needed for layout -> https://vuetifyjs.com/en/framework/default-markup -->
   <v-app>
     <v-toolbar app>
       <v-toolbar-title class="headline text-uppercase">
@@ -16,18 +17,19 @@
     </v-toolbar>
 
     <v-content>
-      <Test/>
+      <Login/>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import Test from './components/Test'
+    import Test from './components/Test'
+    import Login from './components/Login'
 
 export default {
   name: 'App',
   components: {
-    Test
+    Test, Login
   },
   data () {
     return {
