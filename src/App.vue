@@ -1,20 +1,7 @@
 <template>
   <!-- v-app needed for layout -> https://vuetifyjs.com/en/framework/default-markup -->
   <v-app>
-    <v-toolbar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        flat
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
-      </v-btn>
-    </v-toolbar>
+    <Nav></Nav>
 
     <v-content>
       <Login/>
@@ -25,11 +12,12 @@
 <script>
     import Test from './components/Test'
     import Login from './components/Login'
+    import Nav from './components/Nav'
 
 export default {
   name: 'App',
   components: {
-    Test, Login
+    Test, Login, Nav
   },
   data () {
     return {
